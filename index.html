@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>USD to BDT Calculator</title>
+</head>
+<body>
+    <h1>USD to BDT Currency Calculator</h1>
+    <input type="number" id="usd" placeholder="Enter USD amount" />
+    <button onclick="convert()">Convert</button>
+    <p id="result"></p>
+
+    <script>
+        function convert() {
+            var usd = document.getElementById("usd").value;
+            var bdt = usd * 110; // ধরো ১ ডলার = ১১০ টাকা
+            document.getElementById("result").innerText = usd + " USD = " + bdt + " BDT";
+        }
+    </script>
+</body>
+</html>
